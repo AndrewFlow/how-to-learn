@@ -22,11 +22,13 @@
 .space-bottom {
   margin-bottom: 100px;
 }
+.logo {
+  width: 183px;
+}
 .logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
-  width: 183px;
   height: 32px;
   background-image: url(../images/logo_place_header.svg);
   background-size: contain;
@@ -52,6 +54,7 @@
   font-weight: normal;
   line-height: 25px;
   z-index: 2;
+  margin: 0;
 }
 .header__link {
   text-decoration: none;
@@ -105,7 +108,7 @@
 .two-columns__paragraph {
   font-size: 24px;
   line-height: 34px;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 0px;
 }
 .two-columns__paragraph:last-child {
   margin: 0;
@@ -156,25 +159,19 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin: 0px 0px 20px 0px;
+  margin: 0;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-}
-.table__phrase {
   margin: 20px 0px 0px 0px;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 /* feynman */
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -217,9 +214,12 @@
   position: relative;
   padding: 90px 0px;
   z-index: 1;
-}
-.theme-dark {
   background-color: #1f1f1f;
+}
+.section-title_theme_dark {
+  color: #fff;
+}
+.section-subtitle_theme_dark {
   color: #fff;
 }
 .kaufman__triangle {
@@ -236,8 +236,10 @@
 
 /* footer */
 
-.logo__place_footer {
-  width: 183px;
+.footer {
+  background-color: #1f1f1f;
+}
+.logo_place_footer {
   height: 35px;
   background-image: url(../images/logo_place_footer.svg);
   background-size: contain;
@@ -248,10 +250,11 @@
   font-size: 18px;
   font-weight: normal;
   padding: 18px 0px;
+  margin: 0;
 }
 .footer__columns {
   margin: 0 auto;
-  width: 92%; /* поставить 92% вместо 90% - единственное решение, которое я нашел, чтобы logo в хедере и в футере были на одном уровне */
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -260,16 +263,19 @@
   box-sizing: border-box;
   padding: 60px 0px 40px 0px;
 }
-.footer__column_content_copuright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: #fff;
 }
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  color: #fff;
+  margin: 0;
 }
 .footer__column-links {
   display: flex;
